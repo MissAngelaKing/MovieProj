@@ -1,0 +1,45 @@
+.credit-section {
+  margin: 20px;
+}
+
+.credit-section h2 {
+  margin-bottom: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.grid-item {
+  text-align: center;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 400px; 
+  object-fit: cover; 
+  border-radius: 8px;
+}
+
+.main-actor {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.main-actor img {
+  width: 25%; 
+  height: 400px; 
+  object-fit: cover; 
+  border-radius: 8px;
+}
+
+.credit-section a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.credit-section a:hover {
+  color: red; 
+}

@@ -1,0 +1,45 @@
+ .productionCompany {
+    margin: 10px;
+    padding: 20px;
+    background-color: #fbeaea;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+  
+  .productionCompany h3 {
+    margin-top: 0;
+  }
+  
+  .productionCompany ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .productionCompany li {
+    flex-basis: 15%;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .productionCompany li img {
+    width: 20px;
+    height: 10px;
+    border-radius: 30%;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  
+  .productionCompany li:hover {
+    background-color: #ccc;
+    cursor: pointer;
+  }
+  
+  .productionCompany li span {
+    margin-left: 10px;
+  }
