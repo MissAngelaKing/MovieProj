@@ -1,0 +1,29 @@
+
+.container {
+    margin-top: 12vh;
+    padding: 20px;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+  }
+  
+  .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .content .ucard {
+    flex: 1 1 30%;
+    margin: 10px;
+  }
+
+  .movie-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  

@@ -1,0 +1,157 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.home-page {
+  padding: 20px;
+}
+
+.movie-section {
+  margin-bottom: 30px;
+}
+
+.movie-section h2 {
+  margin-bottom: 20px;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.movie-item {
+  text-align: center;
+  position: relative;
+}
+
+.movie-item img {
+  width: 75%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.movie-item h3 {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.latest-movies .movie-item,
+.popular-movies .movie-item {
+  padding: 10px;
+}
+
+.slick-slide {
+  padding: 0 10px;
+}
+
+.slick-list {
+  margin: 0 -10px;
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 1;
+}
+
+.movie-section.latest-movies,
+.movie-section.popular-movies {
+  padding: 0 10px;
+}
+
+.movie-section.latest-movies .slick-list,
+.movie-section.popular-movies .slick-list {
+  margin: 0;
+}
+
+.slick-track {
+  display: flex;
+  align-items: center;
+}
+
+.movie-section.latest-movies .slick-prev,
+.movie-section.latest-movies .slick-next,
+.movie-section.popular-movies .slick-prev,
+.movie-section.popular-movies .slick-next {
+  top: calc(50% - 20px);
+}
+
+.movie-section.latest-movies,
+.movie-section.popular-movies {
+  margin-bottom: 20px; 
+}
+
+.carousel-hover {
+  position: relative;
+}
+
+.carousel-hover .hover-left,
+.carousel-hover .hover-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 25px;
+  z-index: 2;
+  background: rgba(39, 37, 37, 0.5);
+  cursor: pointer;
+}
+
+.carousel-hover .hover-left {
+  left: 0;
+}
+
+.carousel-hover .hover-right {
+  right: 0;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  width: 0;
+  height: 0;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-bottom: 20px solid #c301e5;
+  border-radius: 20px;
+}
+
+.movie-item:hover .play-button {
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .movie-item img {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .movie-item img {
+    width: 100%;
+  }
+
+  .play-button {
+    border-bottom: 15px solid #c301e5;
+  }
+
+  .carousel-hover .hover-left,
+  .carousel-hover .hover-right {
+    width: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-page {
+    padding: 10px;
+  }
+
+  .movie-section h2 {
+    font-size: 18px;
+  }
+
+  .movie-item h3 {
+    font-size: 14px;
+  }
+}
